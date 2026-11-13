@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task List</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Task List</h1>
+    <p class="status" id="status">Checking server…</p>
+
+    <div class="add">
+      <input id="title" type="text" placeholder="Add a task" maxlength="200" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="list"></ul>
+    <p class="empty" id="empty" hidden>No tasks yet.</p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

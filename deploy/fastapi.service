@@ -1,0 +1,12 @@
+[Unit]
+Description=FastAPI app (uvicorn)
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/ec2-practice-app
+ExecStart=/home/ubuntu/ec2-practice-app/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
